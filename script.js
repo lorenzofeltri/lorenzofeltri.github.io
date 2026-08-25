@@ -1,13 +1,35 @@
-const button = document.getElementById("magicButton");
-const message = document.getElementById("message");
+// =========================
+// ANNO AUTOMATICO
+// =========================
 
-let clicks = 0;
+const year = document.getElementById("year");
 
-button.addEventListener("click", function () {
+year.textContent = new Date().getFullYear();
 
-    clicks++;
 
-    message.textContent =
-        `Hai cliccato il pulsante ${clicks} ${clicks === 1 ? "volta" : "volte"}! 🚀`;
+// =========================
+// ANIMAZIONE SCROLL
+// =========================
 
+const sections = document.querySelectorAll(".section");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.1
+    }
+);
+
+sections.forEach((section) => {
+    observer.observe(section);
 });
