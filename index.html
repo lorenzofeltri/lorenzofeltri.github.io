@@ -4,33 +4,473 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Il mio primo sito</title>
+    <meta name="description" content="Sito personale e portfolio professionale">
+
+    <title>Nome Cognome — Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="container">
+    <!-- NAVBAR -->
 
-        <div class="card">
-            <span class="badge">ESPERIMENTO</span>
+    <header class="navbar">
+        <div class="nav-container">
 
-            <h1>Ciao, Internet! 👋</h1>
+            <a href="#home" class="logo">
+                NC
+            </a>
 
-            <p>
-                Questo è il mio primo sito pubblicato gratuitamente
-                con GitHub Pages.
-            </p>
+            <nav>
+                <a href="#about">Chi sono</a>
+                <a href="#skills">Competenze</a>
+                <a href="#projects">Progetti</a>
+                <a href="#experience">Esperienza</a>
+                <a href="#contact">Contatti</a>
+            </nav>
 
-            <button id="magicButton">
-                Cliccami
-            </button>
-
-            <p id="message"></p>
         </div>
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    PORTFOLIO PERSONALE
+                </p>
+
+                <h1>
+                    Ciao, sono <span>Nome Cognome</span>.
+                </h1>
+
+                <h2>
+                    [Il tuo ruolo professionale]
+                </h2>
+
+                <p class="hero-description">
+                    Mi occupo di [ambito professionale] e mi interessa
+                    creare soluzioni semplici, efficaci e ben progettate.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="button primary">
+                        I miei progetti
+                    </a>
+
+                    <a href="#contact" class="button secondary">
+                        Contattami
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about" class="section">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    CHI SONO
+                </p>
+
+                <h2>
+                    Un po' su di me
+                </h2>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div>
+                    <p>
+                        Sono [nome], un professionista che si occupa di
+                        [settore]. Nel corso della mia esperienza ho avuto
+                        modo di lavorare su diversi progetti e di sviluppare
+                        competenze in [competenza 1], [competenza 2] e
+                        [competenza 3].
+                    </p>
+
+                    <p>
+                        Mi piace affrontare problemi complessi, trovare
+                        soluzioni pratiche e continuare a imparare cose nuove.
+                    </p>
+                </div>
+
+                <div class="about-card">
+
+                    <div>
+                        <strong>Località</strong>
+                        <span>Italia</span>
+                    </div>
+
+                    <div>
+                        <strong>Settore</strong>
+                        <span>[Il tuo settore]</span>
+                    </div>
+
+                    <div>
+                        <strong>Disponibilità</strong>
+                        <span>Per nuovi progetti</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills" class="section dark-section">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    COMPETENZE
+                </p>
+
+                <h2>
+                    Cosa so fare
+                </h2>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <span class="skill-number">01</span>
+
+                    <h3>
+                        [Competenza principale]
+                    </h3>
+
+                    <p>
+                        Breve descrizione della tua competenza
+                        e di come la utilizzi professionalmente.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-number">02</span>
+
+                    <h3>
+                        [Seconda competenza]
+                    </h3>
+
+                    <p>
+                        Breve descrizione della tua esperienza
+                        in questo ambito.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-number">03</span>
+
+                    <h3>
+                        [Terza competenza]
+                    </h3>
+
+                    <p>
+                        Breve descrizione della tua esperienza
+                        in questo ambito.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects" class="section">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    PROGETTI
+                </p>
+
+                <h2>
+                    Alcuni dei miei lavori
+                </h2>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        PROGETTO 01
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            WEB / DESIGN
+                        </p>
+
+                        <h3>
+                            Nome del progetto
+                        </h3>
+
+                        <p>
+                            Descrizione del progetto e del problema
+                            che hai risolto.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            Scopri il progetto →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        PROGETTO 02
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            PROJECT / BUSINESS
+                        </p>
+
+                        <h3>
+                            Secondo progetto
+                        </h3>
+
+                        <p>
+                            Descrizione del progetto, del tuo ruolo
+                            e del risultato ottenuto.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Strategy</span>
+                            <span>Design</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            Scopri il progetto →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        PROGETTO 03
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            ALTRO
+                        </p>
+
+                        <h3>
+                            Terzo progetto
+                        </h3>
+
+                        <p>
+                            Descrizione del progetto e delle attività
+                            che hai svolto.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Technology</span>
+                            <span>Research</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            Scopri il progetto →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+
+        <section id="experience" class="section dark-section">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    ESPERIENZA
+                </p>
+
+                <h2>
+                    Il mio percorso
+                </h2>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        2025 — OGGI
+                    </div>
+
+                    <div>
+                        <h3>
+                            Posizione lavorativa
+                        </h3>
+
+                        <p class="company">
+                            Azienda / Organizzazione
+                        </p>
+
+                        <p>
+                            Breve descrizione delle tue responsabilità,
+                            dei progetti e dei risultati ottenuti.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        2023 — 2025
+                    </div>
+
+                    <div>
+                        <h3>
+                            Posizione precedente
+                        </h3>
+
+                        <p class="company">
+                            Azienda / Organizzazione
+                        </p>
+
+                        <p>
+                            Breve descrizione dell'esperienza lavorativa.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        2021 — 2023
+                    </div>
+
+                    <div>
+                        <h3>
+                            Prima esperienza
+                        </h3>
+
+                        <p class="company">
+                            Azienda / Organizzazione
+                        </p>
+
+                        <p>
+                            Breve descrizione dell'esperienza.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="contact-content">
+
+                <p class="eyebrow">
+                    CONTATTI
+                </p>
+
+                <h2>
+                    Parliamo di un progetto?
+                </h2>
+
+                <p>
+                    Se vuoi collaborare con me o semplicemente
+                    vuoi metterti in contatto, puoi scrivermi.
+                </p>
+
+                <a
+                    href="mailto:tuaemail@example.com"
+                    class="button primary"
+                >
+                    Scrivimi una email
+                </a>
+
+                <div class="social-links">
+
+                    <a href="#" target="_blank">
+                        LinkedIn
+                    </a>
+
+                    <a href="#" target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> Nome Cognome.
+            Tutti i diritti riservati.
+        </p>
+
+    </footer>
+
 
     <script src="script.js"></script>
 
